@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/karnhao/HomeworkDiscordBot/issues"
   },
-  "homepage": "https://github.com/karnhao/HomeworkDiscordBot#readme"
+  "type": "module",
+  "homepage": "https://github.com/karnhao/HomeworkDiscordBot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
 }
