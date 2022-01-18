@@ -31,6 +31,20 @@ function ready() {
     console.log("Bot is ready!");
 }
 
+/**
+ * ฟังก์ชันจะทำงานทุกๆครั้งที่มีการส่งข้อความมา
+ * @param {discord.Message} message 
+ */
+function message(message) {
+    if (message.content == "ping") {
+        message.reply({
+            content: "pong"
+        });
+    }
+}
+
 bot.once("ready", ready);
+
+bot.on("messageCreate", message)
 
 bot.login(token);
